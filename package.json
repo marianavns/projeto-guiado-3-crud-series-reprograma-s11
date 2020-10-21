@@ -1,0 +1,23 @@
+{
+  "name": "projeto-guiado-3-crud-series-reprograma-s11",
+  "version": "1.0.0",
+  "description": "Exercício prático da 11° semana do curso de Back End da Reprograma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianavns/projeto-guiado-3-crud-series-reprograma-s11.git"
+  },
+  "author": "marianavns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianavns/projeto-guiado-3-crud-series-reprograma-s11/issues"
+  },
+  "homepage": "https://github.com/marianavns/projeto-guiado-3-crud-series-reprograma-s11#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
