@@ -23,8 +23,7 @@ const getByID = (req, res) => {
 
 const postSerie = (req, res) => {
     const {id, name, genre, synopsis, liked, seasons} = req.body
-    console.log(id)
-
+  
     if (filledIDs.indexOf(id) != -1) {
         res.status(201).send(`Não foi possível adicionar a série ${name} ao arquivo pois a ID escolhida (${id}) já está preenchida. Por favor, escolha números diferentes de ${filledIDs} para a nova série a ser cadastrada.`)
     } else {
@@ -42,8 +41,25 @@ const postSerie = (req, res) => {
     }
 }
 
-// const putSerie = (req, res) => {
-// }
+const editSerie = (req, res) => {
+    console.log('Entrou em updaeSerie')
+    const id = req.params.id
+    const updatedSeries = req.body
+        
+    try {
+        const seriesToUpdate = series.find(element => element.id == id)
+        const index = series.indexOf(seriesToUpdate)
+
+        series.splice(index, 1, updatedSeries)
+
+        writeJSON(`A série com o id ${id} foi atualizada com sucesso`)
+
+    res.status(200).send(series)
+    }
+        catch (err) {
+            return res.status(424).send({ message: 'O arquivo não pôde ser processado.' })
+        }
+}
 
 const deleteSerie = (req, res) => {
     const id = parseInt(req.params.id)
@@ -65,7 +81,7 @@ module.exports = {
     getAllSeries,
     getByID,
     postSerie,
-    // putSerie,
+    editSerie,
     deleteSerie,
     // patchSerie
 }

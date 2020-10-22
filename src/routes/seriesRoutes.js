@@ -6,7 +6,7 @@ const controller = require('../controllers/seriesController')
 router.get('/', controller.getAllSeries)
 router.get('/:id', controller.getByID)
 router.post('/', controller.postSerie)
-// router.put('/', controller.putSerie)
+router.put('/:id', controller.editSerie)
 router.delete('/:id', controller.deleteSerie)
 // router.patch('/', controller.patchSerie)
 
