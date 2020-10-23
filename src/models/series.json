@@ -69,20 +69,138 @@
                 "id": 1,
                 "code": "Temporada 1",
                 "episodes": [
-                    {},
-                    {},
-                    {},
-                    {}
+                    {
+                        "id": 1,
+                        "code": "ep01",
+                        "name": "A explosão",
+                        "watched": true
+                    },
+                    {
+                        "id": 2,
+                        "code": "ep02",
+                        "name": "Em cana",
+                        "watched": true
+                    },
+                    {
+                        "id": 3,
+                        "code": "ep03",
+                        "name": "Durango Kid",
+                        "watched": true
+                    },
+                    {
+                        "id": 4,
+                        "code": "ep04",
+                        "name": "Efeito Contrário",
+                        "watched": true
+                    },
+                    {
+                        "id": 5,
+                        "code": "ep05",
+                        "name": "Ninguém segura o Justin",
+                        "watched": true
+                    },
+                    {
+                        "id": 6,
+                        "code": "ep06",
+                        "name": "O valor delas",
+                        "watched": true
+                    },
+                    {
+                        "id": 7,
+                        "code": "ep07",
+                        "name": "Rede Afro-Americana de Televisão",
+                        "watched": true
+                    },
+                    {
+                        "id": 8,
+                        "code": "ep08",
+                        "name": "Na balada",
+                        "watched": true
+                    },
+                    {
+                        "id": 9,
+                        "code": "ep09",
+                        "name": "Dia da Abolição",
+                        "watched": true
+                    },
+                    {
+                        "id": 10,
+                        "code": "ep10",
+                        "name": "A jaqueta perdida",
+                        "watched": true
+                    }
                 ]
             },
             {
                 "id": 2,
                 "code": "Temporada 2",
                 "episodes": [
-                    {},
-                    {},
-                    {},
-                    {}
+                    {
+                        "id": 1,
+                        "code": "ep01",
+                        "name": "O cara do jacaré",
+                        "watched": true
+                    },
+                    {
+                        "id": 2,
+                        "code": "ep02",
+                        "name": "Ondas milagrosas",
+                        "watched": true
+                    },
+                    {
+                        "id": 3,
+                        "code": "ep03",
+                        "name": "Alguém com grana",
+                        "watched": true
+                    },
+                    {
+                        "id": 4,
+                        "code": "ep04",
+                        "name": "Helen",
+                        "watched": true
+                    },
+                    {
+                        "id": 5,
+                        "code": "ep05",
+                        "name": "Barbearia",
+                        "watched": true
+                    },
+                    {
+                        "id": 6,
+                        "code": "ep06",
+                        "name": "Teddy Perkins",
+                        "watched": true
+                    },
+                    {
+                        "id": 7,
+                        "code": "ep07",
+                        "name": "O cara do champanhe",
+                        "watched": true
+                    },
+                    {
+                        "id": 8,
+                        "code": "ep08",
+                        "name": "Ser verdadeiro",
+                        "watched": true
+                    },
+                    {
+                        "id": 9,
+                        "code": "ep09",
+                        "name": "O verdadeiro problema",
+                        "watched": true
+                    },
+                    {
+                        "id": 10,
+                        "code": "ep10",
+                        "name": "Fubu",
+                        "watched": true
+                    },
+                    {
+                        "id": 11,
+                        "code": "ep11",
+                        "name": "Você é minha família",
+                        "watched": true
+                    }
                 ]
             }
         ]

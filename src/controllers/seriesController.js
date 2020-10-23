@@ -78,9 +78,9 @@ const editLiked = (req, res) => {
     const id = req.params.id 
     try {
         const serieToUpdate =  series.filter(element => element.id == id)
-        serieToUpdate.map(objeto => {
+        serieToUpdate.map(object => {
             Object.keys(likedUpdate).forEach(key => {
-                objeto[key] = likedUpdate[key]
+                object[key] = likedUpdate[key]
             })
         })
         writeJSON(`A série com o id ${id} teve seu status atualizado para ${likedUpdate}`)   
