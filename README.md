@@ -20,7 +20,7 @@ We made an api together to control the movies we want to watch during class. How
 
 Our series API contains multiple seasons and these contain multiple episodes. We can create some more routes to work with these seasons and episodes:
 
-| Verbo        | Recurso                | Descrição                             | Work Progress
+| Verb        | Resource                | Description                           | Work Progress
 | ------------ | ---------------------- | ------------------------------------- | ----------------
 | POST         | `/series/:id/season/:seasonId/episode` | Register a new episode for the season with :id is the series id and :seasonId is the season id | 🏗️
 | POST         | `/series/:id/season`                   | Register new season in the series with :id is the series id | 🏗️
