@@ -29,14 +29,12 @@ const postSerie = (req, res) => {
         res.status(201).send(`Não foi possível adicionar a série ${name} ao arquivo pois a ID escolhida (${id}) já está preenchida. Por favor, escolha números diferentes de ${filledIDs} para a nova série a ser cadastrada.`)
     } else {
         series.push({id, name, genre, synopsis, liked, seasons})
-            function compare(a,b) {
-                if (a.id < b.id)
-                return -1;
-                if (a.id > b.id)
-                return 1;
+        let compare = (a,b) => {
+                if (a.id < b.id) return -1;
+                if (a.id > b.id) return 1;
                 return 0;
             }
-        series.sort(compare);
+        series.sort((compare));
         writeJSON(`A série "${name}" foi adicionada no ID ${id}!`)
         res.status(201).send(series)    
     }
