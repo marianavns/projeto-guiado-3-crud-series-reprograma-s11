@@ -11,6 +11,7 @@ const writeJSON = (phrase) => {
         })
     }
 
+
 const getAllSeries = (req, res) => {
     res.status(200).send(series)
 }
@@ -42,7 +43,6 @@ const postSerie = (req, res) => {
 }
 
 const editSerie = (req, res) => {
-    console.log('Entrou em updaeSerie')
     const id = req.params.id
     const updatedSeries = req.body
         
@@ -74,8 +74,25 @@ const deleteSerie = (req, res) => {
             }
 }
 
-// const patchSerie = (req, res) => {
-// }
+const editAttribute = (req, res) => {
+    const updatedAttribute = req.body
+    const liked = req.params.liked
+    
+    try {
+        const seriesToUpdate =  series.filter(element => element.liked == liked)
+        seriesToUpdate.map(objeto => {
+            Object.keys(updatedAttribute).forEach(key => {
+                objeto[key] = updatedAttribute[key]
+            })}
+    )
+    writeJSON(`As informações dos livros do gênero "${liked}" foram atualizadas com sucesso.`)   
+    return res.status(200).send(series)
+
+    } catch (err) {
+        return res.status(424).send({ message: `Não foi possível atualizar a chave` })
+      }
+}
+
 
 module.exports = {
     getAllSeries,
@@ -83,5 +100,5 @@ module.exports = {
     postSerie,
     editSerie,
     deleteSerie,
-    // patchSerie
+    editAttribute
 }

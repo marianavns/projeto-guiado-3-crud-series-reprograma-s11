@@ -8,6 +8,6 @@ router.get('/:id', controller.getByID)
 router.post('/', controller.postSerie)
 router.put('/:id', controller.editSerie)
 router.delete('/:id', controller.deleteSerie)
-// router.patch('/', controller.patchSerie)
+router.patch('/:liked', controller.editAttribute)
 
 module.exports = router
